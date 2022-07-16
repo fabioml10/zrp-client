@@ -1,8 +1,8 @@
-interface Abilities {
+interface IAbilities {
   abilities: string[]
 }
 
-export const Abilities: React.FC<Abilities> = ({ abilities }) => {
+export const Abilities: React.FC<IAbilities> = ({ abilities }) => {
   return (
     <ol>
       {abilities?.map(item => <li key={item}>{item}</li>)}
