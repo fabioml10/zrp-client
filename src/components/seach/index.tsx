@@ -8,7 +8,7 @@ interface Ability {
   abilities: string[]
 }
 
-export const SearchInput: React.FC = () => {
+export const Search: React.FC = () => {
   const [searchTerm, setSearchTerm] = useState<string>('')
   const [abilities, setAbilities] = useState<Ability>({ abilities: [] })
   const [error, setError] = useState<string | null>(null)
@@ -49,4 +49,4 @@ export const SearchInput: React.FC = () => {
   )
 }
 
-export default SearchInput
+export default Search
