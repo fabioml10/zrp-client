@@ -24,7 +24,7 @@ export const SearchInput: React.FC = () => {
     clear()
     setIsLoading(true)
 
-    const url = `http://localhost:3001/api/v1/pokemons/search_abilities?q=${searchTerm}`
+    const url = `${process.env.API_URL}?q=${searchTerm}`
 
     axios.get(url)
       .then((response: any) => {
