@@ -24,7 +24,7 @@ export const SearchInput: React.FC = () => {
     clear()
     setIsLoading(true)
 
-    const url = `${process.env.API_URL}?q=${searchTerm}`
+    const url = `${process.env.REACT_APP_API_URL}?q=${searchTerm}`
 
     axios.get(url)
       .then((response: any) => {
